@@ -7,7 +7,8 @@
 bikeshare
 
 ### Description
-
+explore for three cities: chicago, new york city, washington
+about bikes 
 
 ### Files used
 
