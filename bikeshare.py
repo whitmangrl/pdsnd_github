@@ -42,7 +42,7 @@ def get_filters():
             print('Invalid! try again')
 
 
-    print('-'*40)
+    print('='*70)
     return city, month, day
 
 
