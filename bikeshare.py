@@ -20,7 +20,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input('\nEnter a city chicago, new york city or washington?\n').lower()
-        if city in CITY_DATA:
+        if city in ('chicago', 'new york city', 'washington'):
             break
         else:
             print('Invalid! try again')
@@ -42,7 +42,7 @@ def get_filters():
             print('Invalid! try again')
 
 
-    print('-'*40)
+    print('='*70)
     return city, month, day
 
 
@@ -89,7 +89,7 @@ def time_stats(df):
     print('\nThe most common start hour: ', df['hour'].mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('$'*55)
 
 
 def station_stats(df):
